@@ -244,8 +244,10 @@ bool isPalindrome(Node *head)
 
     return true;
 }
-void swap(Node* prev1, Node* curr1, Node* prev2, Node* curr2)
+void swap(Node* prev1,  Node* prev2)
 {
+    Node* curr1 = prev1->next;
+    Node* curr2 = prev2->next;
 	prev1->next = curr2;
 	prev2->next = curr1;
 	Node* temp = curr1->next;
@@ -261,9 +263,9 @@ void Sort(List& l)
 	for (Node* i = l.head; i != NULL && i->next != NULL; i = i->next)
 		for (Node* j = i; j != NULL && j->next != NULL; j = j->next)
 		{
-			if (i->next->data > j->next->data)
+			if (i->next->data < j->next->data)
 			{
-				swap(i, i->next, j, j->next);
+				swap(i, j);
 			}
 		}
 
@@ -329,8 +331,8 @@ int main()
 
     // printList(l);
 
-    // Sort(l);
-    deleteDuplicate(l);
+    Sort(l);
+    // deleteDuplicate(l);
     printList(l);
 
     return 0;
