@@ -306,34 +306,34 @@ void printList(List l)
     cout << endl;
 }
 
-int main()
-{
+// int main()
+// {
 
-    List l;
-    addHead(l, 3);
-    addHead(l, 3);
-    addHead(l, 6);
-    addHead(l, 3);
-    addHead(l, 8);
-    addHead(l, 5);
-    addHead(l, 5);
-    addHead(l, 5);
+//     List l;
+//     addHead(l, 3);
+//     addHead(l, 3);
+//     addHead(l, 6);
+//     addHead(l, 3);
+//     addHead(l, 8);
+//     addHead(l, 5);
+//     addHead(l, 5);
+//     addHead(l, 5);
 
-    addTail(l, 6);
-    addTail(l, 7);
-    addTail(l, 8);
-    addTail(l, 8);
+//     addTail(l, 6);
+//     addTail(l, 7);
+//     addTail(l, 8);
+//     addTail(l, 8);
 
-    printList(l);
+//     printList(l);
 
-    // deleteValue(l, 5);
-    // revertByRecursion(l.head, l.head, NULL);
+//     // deleteValue(l, 5);
+//     // revertByRecursion(l.head, l.head, NULL);
 
-    // printList(l);
+//     // printList(l);
 
-    Sort(l);
-    // deleteDuplicate(l);
-    printList(l);
+//     Sort(l);
+//     // deleteDuplicate(l);
+//     printList(l);
 
-    return 0;
-}
+//     return 0;
+// }

@@ -51,8 +51,8 @@ void getMatrix(fstream& input, int**& a, int& row, int& col)
 	}
 	input.close();
 }
-int main()
-{
+// int main()
+// {
 
-    return 0;
-}
+//     return 0;
+// }
