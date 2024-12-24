@@ -2,6 +2,7 @@
 #include <string>
 #include <stack>
 #include <sstream>
+#include <cmath>
 
 using namespace std;
 
@@ -109,12 +110,12 @@ int cal(string posfix)
 }
 int main()
 {
-	string infix = "212*4-(7+7)/2+55/(3^2+2)";
+	string infix = "((u+v)^(p*x^3))";
 	/*cout << "Nhập biểu thức trung tố: ";
 	getline(cin, infix);*/
 
 	string postfix = infixToPostfix(infix);
 	cout << postfix << endl;
-	cout << cal(postfix);
+	// cout << cal(postfix);
 	return 0;
 }
